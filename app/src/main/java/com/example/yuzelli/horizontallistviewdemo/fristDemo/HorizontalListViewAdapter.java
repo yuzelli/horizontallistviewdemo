@@ -74,18 +74,8 @@ public class HorizontalListViewAdapter extends BaseAdapter{
         private TextView mTitle ;
 
     }
-//    private Bitmap getPropThumnail(int id){
-//        Drawable d = mContext.getResources().getDrawable(id);
-//        Bitmap b = BitmapUtil.drawableToBitmap(d);
-////      Bitmap bb = BitmapUtil.getRoundedCornerBitmap(b, 100);
-//        int w = mContext.getResources().getDimensionPixelOffset(R.dimen.thumnail_default_width);
-//        int h = mContext.getResources().getDimensionPixelSize(R.dimen.thumnail_default_height);
-//
-//        Bitmap thumBitmap = ThumbnailUtils.extractThumbnail(b, w, h);
-//
-//        return thumBitmap;
-//    }
-//    public void setSelectIndex(int i){
-//        selectIndex = i;
-//    }
+
+    public void setSelectIndex(int i){
+        selectIndex = i;
+    }
 }

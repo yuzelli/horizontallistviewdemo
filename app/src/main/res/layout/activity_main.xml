@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
 
     tools:context="com.example.yuzelli.horizontallistviewdemo.MainActivity">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="#cdcdcd"
+        android:text="第一种"/>
 
 
     <com.example.yuzelli.horizontallistviewdemo.fristDemo.HorizontalListView
         android:id="@+id/hv_demo"
         android:layout_width="match_parent"
-        android:layout_height="50dp"></com.example.yuzelli.horizontallistviewdemo.fristDemo.HorizontalListView>
+        android:layout_height="50dp"
+        android:layout_below="@+id/horizontalScrollView"
+        android:layout_alignParentStart="true" />
 
-</RelativeLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="#cdcdcd"
+        android:text="第二种"/>
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+
+        android:id="@+id/horizontalScrollView">
+
+        <LinearLayout
+            android:id="@+id/thumbnailLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

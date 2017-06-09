@@ -3,7 +3,6 @@
     android:layout_width="100.5dp"
     android:layout_height="50dp"
     android:orientation="horizontal"
-    android:background="@drawable/bg_item_select"
    >
     <TextView
         android:id="@+id/tv_title"
